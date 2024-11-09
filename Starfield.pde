@@ -1,6 +1,3 @@
-//make a meteor
-//make a blackhole in the background
-//only use one array
 
 class Particle {
   double myX, myY, myAngle, mySpeed;
@@ -61,11 +58,6 @@ class oddball extends Particle {
 } // end of oddball
 
 
-void mouseReleased (){
-
-    redraw();
- 
-} //end of mouseClicked()
 
 Particle[] moreParticles = new Particle[1000]; //only one array to hold both particles and oddball
 
@@ -85,6 +77,7 @@ void setup() {
 void draw() {
 
   background(23, 23, 23);
+  noStroke();
 
   for (int i = 0; i < 500; i++) {
     int backgroundDotsX;
@@ -100,7 +93,10 @@ void draw() {
   }
 
   for (int i = 0; i < moreParticles.length - 1; i++) {
-
+    
+      
+  fill(23, 23, 23);
+rect(390, 390, 30, 20);
     moreParticles[i].move();
     moreParticles[i].show();
   }
@@ -109,15 +105,8 @@ void draw() {
     moreParticles[i].move();
     moreParticles[i].show();
   }
-  
-  if(mousePressed == true){
-  
-    //(); 
-    //if true make x and y restart to their original values?
-  
-  }
+
+ 
 }//end of draw
-
-
 
 
