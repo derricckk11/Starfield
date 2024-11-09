@@ -12,7 +12,7 @@ class Particle {
     myColor3 = (int)(Math.random()* 255 + 1); 
     myAngle = (Math.random()*TWO_PI);//might have to use radians
     //mySpeed = (int)(Math.random()* 30 + 1) + (int) (Math.random()*2 + 1); //the addition spaces them out, the multiplication
-    mySpeed = (int) (Math.random()* 30 + 11) - (int)(Math.random()*20);
+    mySpeed = (int) (Math.random()* 20 + 8) - (int)(Math.random()*20);
     mySize = (int)(Math.random()* 10 + 5);
   }
 
